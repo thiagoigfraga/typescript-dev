@@ -1,8 +1,25 @@
-import { Carro } from "./Carro";
+import {CadastroUsuario} from "./Classes/CadastroUsuario";
+import {Sexo} from "./Classes/Sexo";
+import {Endereco} from "./Classes/Endereco";
 
-let car1: Carro = new Carro('VW', 'Gol');
+const usuario1 = new CadastroUsuario('Thiago', 11234567891, 123456789, Sexo.Masculino,
+    new Endereco('Das laranjeiras',
+        12,
+        1234567,
+        'Das americas',
+        'Guarapuava')
+);
+
+const usuario2 = new CadastroUsuario('Lucas', 2318762377, 9876543, Sexo.Masculino,
+    new Endereco('Das Rosas',
+        64,
+        87654322,
+        'Centro',
+        'Pato Branco')
+);
 
 
-car1.marca = 'FIAT'
+console.log(usuario1.nome)
+console.log(usuario2.nome)
 
-console.log(car1.marca)
+
