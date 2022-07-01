@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only ./01-factoryMethod/index.ts --bike"
+    "dev": "ts-node-dev --respawn --transpile-only ./01-factoryMethod/index.ts --movie"
   },
   "repository": {
     "type": "git",

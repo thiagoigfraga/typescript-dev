@@ -1,22 +1,17 @@
-import { CarTransport } from "./src/classes/transport/CarTransport";
-import { MotorcycleTransport } from "./src/classes/transport/MotorcycleTransport";
-import { BicycleTransport } from "./src/classes/transport/BicycleTransport";
-import { Transport } from "./src/classes/transport/Transport";
+import { GameLocation } from './src/classes/location/GameLocation';
+import { Location } from './src/classes/location/Location';
+import { MovieLocation } from './src/classes/location/MovieLocation';
 
-declare var process: { argv: string | string[]; };
+let locat: Location;
 
-let transport: Transport;
-
-if(process.argv.includes("--uber")){
-    transport = new CarTransport();
-}else if(process.argv.includes("--eats")){
-    transport = new MotorcycleTransport();
-}else if(process.argv.includes("--bike")){
-    transport = new BicycleTransport();
-}else{
-    console.error("Selecione o tipo de transporte");
+if (process.argv.includes('--movie')) {
+    locat = new MovieLocation();
+} else if (process.argv.includes('--game')) {
+    locat = new GameLocation();
+} else {
+    console.error('Selecione o tipo da localização');
 }
 
-if(transport){
-    transport.startTransport();
+if (locat) {
+    locat.startItem();
 }
