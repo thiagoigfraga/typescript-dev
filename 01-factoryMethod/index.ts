@@ -12,6 +12,7 @@ if (process.argv.includes('--movie')) {
     console.error('Selecione o tipo da localização');
 }
 
+//@ts-ignore
 if (locat) {
     locat.startItem();
 }
