@@ -1,0 +1,3 @@
+PORT = 3001
+DB_USER= 'thiagoigfraga'
+DB_PASSWORD = 'z6wLtLJkrrLXpJZz'
