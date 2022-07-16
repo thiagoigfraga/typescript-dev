@@ -9,8 +9,8 @@ export interface IBuilder{
     reset():void;
     getVehicle(): Vehicle;
     setVehicleType(VehicleType: VehicleType): void;
-    addWheel(wheel: Wheel);
-    setSeats(number: number);
-    setEngine(engine: Engine);
-    setTransmissor(transmissor: Transmission);
+    addWheel(wheel: Wheel):void;
+    setSeats(number: number):void;
+    setEngine(engine: Engine):void;
+    setTransmissor(transmissor: Transmission):void;
 }
