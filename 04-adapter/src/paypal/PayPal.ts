@@ -12,11 +12,10 @@ export class PayPal implements IPayPalPayment{
     paypalPayment(): void {
         this._token = this.authToken();
         console.log(`TOKEN: ${this._token.token}`);
-        console.log("Enviando pagamento via PayPal"); 
+        console.log("Enviando pagamento via PayPal."); 
     }
 
     paypalReceive(): void {
-        console.log("Recebendo pagamento via PayPal");
-
+        console.log("Recebendo pagamento via PayPal.");
     }
 }
